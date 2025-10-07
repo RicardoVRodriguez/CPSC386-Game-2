@@ -3,8 +3,8 @@ using UnityEngine;
 
 public class SpawnEnemies : MonoBehaviour
 {
-    public float timer = 180f;
-    public float currentTime = 180f;
+    public int timer = 250;
+    public int currentTime = 250;
     public GameObject monster_Mushroom;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

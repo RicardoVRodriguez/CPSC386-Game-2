@@ -9,6 +9,12 @@ TagManager:
   - Pot
   - Monster-Mushroom
   - Projectile
+  - Destructable-Tree
+  - Pickup-Logs
+  - Monster-Cabbage
+  - Pickup-Cabbage
+  - Monster-Meat
+  - Pickup-Exp
   layers:
   - Default
   - TransparentFX
