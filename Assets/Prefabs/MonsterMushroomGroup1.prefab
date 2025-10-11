@@ -1,0 +1,474 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2388858935611523675
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4154904599672007767}
+  m_Layer: 0
+  m_Name: MonsterMushroomGroup1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4154904599672007767
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2388858935611523675}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6024638414164253252}
+  - {fileID: 7841411662109313746}
+  - {fileID: 9187529713863657832}
+  - {fileID: 2557169348255704032}
+  - {fileID: 3479194101253101967}
+  - {fileID: 4235166260989860643}
+  - {fileID: 8119955663191124386}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &2408172303273924873
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4154904599672007767}
+    m_Modifications:
+    - target: {fileID: 1234865265561354374, guid: e95399bfdefe3b246a40cb110c4895ca, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 9.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 1234865265561354374, guid: e95399bfdefe3b246a40cb110c4895ca, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.14
+      objectReference: {fileID: 0}
+    - target: {fileID: 1234865265561354374, guid: e95399bfdefe3b246a40cb110c4895ca, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1234865265561354374, guid: e95399bfdefe3b246a40cb110c4895ca, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1234865265561354374, guid: e95399bfdefe3b246a40cb110c4895ca, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1234865265561354374, guid: e95399bfdefe3b246a40cb110c4895ca, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1234865265561354374, guid: e95399bfdefe3b246a40cb110c4895ca, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1234865265561354374, guid: e95399bfdefe3b246a40cb110c4895ca, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1234865265561354374, guid: e95399bfdefe3b246a40cb110c4895ca, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1234865265561354374, guid: e95399bfdefe3b246a40cb110c4895ca, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5393843282425494065, guid: e95399bfdefe3b246a40cb110c4895ca, type: 3}
+      propertyPath: m_Name
+      value: Monster-Mushroom (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e95399bfdefe3b246a40cb110c4895ca, type: 3}
+--- !u!4 &3479194101253101967 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1234865265561354374, guid: e95399bfdefe3b246a40cb110c4895ca, type: 3}
+  m_PrefabInstance: {fileID: 2408172303273924873}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3163015866610998181
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4154904599672007767}
+    m_Modifications:
+    - target: {fileID: 1234865265561354374, guid: e95399bfdefe3b246a40cb110c4895ca, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.16
+      objectReference: {fileID: 0}
+    - target: {fileID: 1234865265561354374, guid: e95399bfdefe3b246a40cb110c4895ca, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.57
+      objectReference: {fileID: 0}
+    - target: {fileID: 1234865265561354374, guid: e95399bfdefe3b246a40cb110c4895ca, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1234865265561354374, guid: e95399bfdefe3b246a40cb110c4895ca, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1234865265561354374, guid: e95399bfdefe3b246a40cb110c4895ca, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1234865265561354374, guid: e95399bfdefe3b246a40cb110c4895ca, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1234865265561354374, guid: e95399bfdefe3b246a40cb110c4895ca, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1234865265561354374, guid: e95399bfdefe3b246a40cb110c4895ca, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1234865265561354374, guid: e95399bfdefe3b246a40cb110c4895ca, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1234865265561354374, guid: e95399bfdefe3b246a40cb110c4895ca, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5393843282425494065, guid: e95399bfdefe3b246a40cb110c4895ca, type: 3}
+      propertyPath: m_Name
+      value: Monster-Mushroom (5)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e95399bfdefe3b246a40cb110c4895ca, type: 3}
+--- !u!4 &4235166260989860643 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1234865265561354374, guid: e95399bfdefe3b246a40cb110c4895ca, type: 3}
+  m_PrefabInstance: {fileID: 3163015866610998181}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3629897536498344806
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4154904599672007767}
+    m_Modifications:
+    - target: {fileID: 1234865265561354374, guid: e95399bfdefe3b246a40cb110c4895ca, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 7.73
+      objectReference: {fileID: 0}
+    - target: {fileID: 1234865265561354374, guid: e95399bfdefe3b246a40cb110c4895ca, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.74
+      objectReference: {fileID: 0}
+    - target: {fileID: 1234865265561354374, guid: e95399bfdefe3b246a40cb110c4895ca, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1234865265561354374, guid: e95399bfdefe3b246a40cb110c4895ca, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1234865265561354374, guid: e95399bfdefe3b246a40cb110c4895ca, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1234865265561354374, guid: e95399bfdefe3b246a40cb110c4895ca, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1234865265561354374, guid: e95399bfdefe3b246a40cb110c4895ca, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1234865265561354374, guid: e95399bfdefe3b246a40cb110c4895ca, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1234865265561354374, guid: e95399bfdefe3b246a40cb110c4895ca, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1234865265561354374, guid: e95399bfdefe3b246a40cb110c4895ca, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5393843282425494065, guid: e95399bfdefe3b246a40cb110c4895ca, type: 3}
+      propertyPath: m_Name
+      value: Monster-Mushroom (3)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e95399bfdefe3b246a40cb110c4895ca, type: 3}
+--- !u!4 &2557169348255704032 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1234865265561354374, guid: e95399bfdefe3b246a40cb110c4895ca, type: 3}
+  m_PrefabInstance: {fileID: 3629897536498344806}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4807821151842474690
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4154904599672007767}
+    m_Modifications:
+    - target: {fileID: 1234865265561354374, guid: e95399bfdefe3b246a40cb110c4895ca, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1234865265561354374, guid: e95399bfdefe3b246a40cb110c4895ca, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1234865265561354374, guid: e95399bfdefe3b246a40cb110c4895ca, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1234865265561354374, guid: e95399bfdefe3b246a40cb110c4895ca, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1234865265561354374, guid: e95399bfdefe3b246a40cb110c4895ca, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1234865265561354374, guid: e95399bfdefe3b246a40cb110c4895ca, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1234865265561354374, guid: e95399bfdefe3b246a40cb110c4895ca, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1234865265561354374, guid: e95399bfdefe3b246a40cb110c4895ca, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1234865265561354374, guid: e95399bfdefe3b246a40cb110c4895ca, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1234865265561354374, guid: e95399bfdefe3b246a40cb110c4895ca, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5393843282425494065, guid: e95399bfdefe3b246a40cb110c4895ca, type: 3}
+      propertyPath: m_Name
+      value: Monster-Mushroom
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e95399bfdefe3b246a40cb110c4895ca, type: 3}
+--- !u!4 &6024638414164253252 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1234865265561354374, guid: e95399bfdefe3b246a40cb110c4895ca, type: 3}
+  m_PrefabInstance: {fileID: 4807821151842474690}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7029274374807841060
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4154904599672007767}
+    m_Modifications:
+    - target: {fileID: 1234865265561354374, guid: e95399bfdefe3b246a40cb110c4895ca, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.87
+      objectReference: {fileID: 0}
+    - target: {fileID: 1234865265561354374, guid: e95399bfdefe3b246a40cb110c4895ca, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.26
+      objectReference: {fileID: 0}
+    - target: {fileID: 1234865265561354374, guid: e95399bfdefe3b246a40cb110c4895ca, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1234865265561354374, guid: e95399bfdefe3b246a40cb110c4895ca, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1234865265561354374, guid: e95399bfdefe3b246a40cb110c4895ca, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1234865265561354374, guid: e95399bfdefe3b246a40cb110c4895ca, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1234865265561354374, guid: e95399bfdefe3b246a40cb110c4895ca, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1234865265561354374, guid: e95399bfdefe3b246a40cb110c4895ca, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1234865265561354374, guid: e95399bfdefe3b246a40cb110c4895ca, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1234865265561354374, guid: e95399bfdefe3b246a40cb110c4895ca, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5393843282425494065, guid: e95399bfdefe3b246a40cb110c4895ca, type: 3}
+      propertyPath: m_Name
+      value: Monster-Mushroom (6)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e95399bfdefe3b246a40cb110c4895ca, type: 3}
+--- !u!4 &8119955663191124386 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1234865265561354374, guid: e95399bfdefe3b246a40cb110c4895ca, type: 3}
+  m_PrefabInstance: {fileID: 7029274374807841060}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7972416917039237614
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4154904599672007767}
+    m_Modifications:
+    - target: {fileID: 1234865265561354374, guid: e95399bfdefe3b246a40cb110c4895ca, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.53
+      objectReference: {fileID: 0}
+    - target: {fileID: 1234865265561354374, guid: e95399bfdefe3b246a40cb110c4895ca, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 10.59
+      objectReference: {fileID: 0}
+    - target: {fileID: 1234865265561354374, guid: e95399bfdefe3b246a40cb110c4895ca, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1234865265561354374, guid: e95399bfdefe3b246a40cb110c4895ca, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1234865265561354374, guid: e95399bfdefe3b246a40cb110c4895ca, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1234865265561354374, guid: e95399bfdefe3b246a40cb110c4895ca, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1234865265561354374, guid: e95399bfdefe3b246a40cb110c4895ca, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1234865265561354374, guid: e95399bfdefe3b246a40cb110c4895ca, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1234865265561354374, guid: e95399bfdefe3b246a40cb110c4895ca, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1234865265561354374, guid: e95399bfdefe3b246a40cb110c4895ca, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5393843282425494065, guid: e95399bfdefe3b246a40cb110c4895ca, type: 3}
+      propertyPath: m_Name
+      value: Monster-Mushroom (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e95399bfdefe3b246a40cb110c4895ca, type: 3}
+--- !u!4 &9187529713863657832 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1234865265561354374, guid: e95399bfdefe3b246a40cb110c4895ca, type: 3}
+  m_PrefabInstance: {fileID: 7972416917039237614}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &9075128418485488212
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4154904599672007767}
+    m_Modifications:
+    - target: {fileID: 1234865265561354374, guid: e95399bfdefe3b246a40cb110c4895ca, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1234865265561354374, guid: e95399bfdefe3b246a40cb110c4895ca, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 11.63
+      objectReference: {fileID: 0}
+    - target: {fileID: 1234865265561354374, guid: e95399bfdefe3b246a40cb110c4895ca, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1234865265561354374, guid: e95399bfdefe3b246a40cb110c4895ca, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1234865265561354374, guid: e95399bfdefe3b246a40cb110c4895ca, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1234865265561354374, guid: e95399bfdefe3b246a40cb110c4895ca, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1234865265561354374, guid: e95399bfdefe3b246a40cb110c4895ca, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1234865265561354374, guid: e95399bfdefe3b246a40cb110c4895ca, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1234865265561354374, guid: e95399bfdefe3b246a40cb110c4895ca, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1234865265561354374, guid: e95399bfdefe3b246a40cb110c4895ca, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5393843282425494065, guid: e95399bfdefe3b246a40cb110c4895ca, type: 3}
+      propertyPath: m_Name
+      value: Monster-Mushroom (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e95399bfdefe3b246a40cb110c4895ca, type: 3}
+--- !u!4 &7841411662109313746 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1234865265561354374, guid: e95399bfdefe3b246a40cb110c4895ca, type: 3}
+  m_PrefabInstance: {fileID: 9075128418485488212}
+  m_PrefabAsset: {fileID: 0}

@@ -48,6 +48,7 @@ public class Tree_Spawn : MonoBehaviour
             Vector3 pos = new(transform.position.x + offset, transform.position.y + offset, transform.position.z);
 
             Instantiate(pickupLogs, pos, Quaternion.identity);
+            Destroy(other.gameObject);
         }
        
     }

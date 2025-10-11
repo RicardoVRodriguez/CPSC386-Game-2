@@ -6,7 +6,9 @@ public class Monster_Mushroom : MonoBehaviour
     public GameObject pickupMushroom;
     public GameObject pickupExp;
     private Transform player;
-    int MoveSpeed = 1;
+   
+    public AudioClip deathSound;
+    public int MoveSpeed = 1;
     int MaxDist = 10;
     int MinDist = 0;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -38,6 +40,7 @@ public class Monster_Mushroom : MonoBehaviour
 
         if (other.gameObject.CompareTag("Projectile"))
         {
+            AudioSource.PlayClipAtPoint(deathSound, transform.position);
             float offset = 0.75f;
             Vector3 pos = new(transform.position.x + offset, transform.position.y + offset, transform.position.z);
 
@@ -47,9 +50,11 @@ public class Monster_Mushroom : MonoBehaviour
             
             
             Destroy(gameObject);
-            
+            Destroy(other.gameObject);
+
         }
 
-        
+
+
     }
 }

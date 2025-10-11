@@ -150,6 +150,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   lifetime: 5
+  poison: {fileID: 6559027317412182994, guid: fe258e63d82d51c47b8e4d3de75348fb, type: 3}
+  grass: {fileID: 339118968006827172, guid: 6229716b1f316574e8ee2e148da832b8, type: 3}
 --- !u!50 &4847097460663574710
 Rigidbody2D:
   serializedVersion: 5

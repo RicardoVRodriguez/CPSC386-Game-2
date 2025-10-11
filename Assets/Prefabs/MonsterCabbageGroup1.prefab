@@ -1,0 +1,348 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3514874134553060768
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6377135333117076897}
+  m_Layer: 0
+  m_Name: MonsterCabbageGroup1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6377135333117076897
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3514874134553060768}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -10.961567, y: 2.3833463, z: 0.009744726}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 639019759401350517}
+  - {fileID: 8982791711433419884}
+  - {fileID: 4560399058717129890}
+  - {fileID: 2315461600373398785}
+  - {fileID: 762470462864103407}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &506990431827334113
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6377135333117076897}
+    m_Modifications:
+    - target: {fileID: 4053516555693797187, guid: 3e34306626d9d9047be41e7844abdd8b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.85156727
+      objectReference: {fileID: 0}
+    - target: {fileID: 4053516555693797187, guid: 3e34306626d9d9047be41e7844abdd8b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.4133463
+      objectReference: {fileID: 0}
+    - target: {fileID: 4053516555693797187, guid: 3e34306626d9d9047be41e7844abdd8b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.009744726
+      objectReference: {fileID: 0}
+    - target: {fileID: 4053516555693797187, guid: 3e34306626d9d9047be41e7844abdd8b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4053516555693797187, guid: 3e34306626d9d9047be41e7844abdd8b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4053516555693797187, guid: 3e34306626d9d9047be41e7844abdd8b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4053516555693797187, guid: 3e34306626d9d9047be41e7844abdd8b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4053516555693797187, guid: 3e34306626d9d9047be41e7844abdd8b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4053516555693797187, guid: 3e34306626d9d9047be41e7844abdd8b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4053516555693797187, guid: 3e34306626d9d9047be41e7844abdd8b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8608341148552967698, guid: 3e34306626d9d9047be41e7844abdd8b, type: 3}
+      propertyPath: m_Name
+      value: Monster-Cabbage (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3e34306626d9d9047be41e7844abdd8b, type: 3}
+--- !u!4 &4560399058717129890 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4053516555693797187, guid: 3e34306626d9d9047be41e7844abdd8b, type: 3}
+  m_PrefabInstance: {fileID: 506990431827334113}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1757204138012930626
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6377135333117076897}
+    m_Modifications:
+    - target: {fileID: 4053516555693797187, guid: 3e34306626d9d9047be41e7844abdd8b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.8715668
+      objectReference: {fileID: 0}
+    - target: {fileID: 4053516555693797187, guid: 3e34306626d9d9047be41e7844abdd8b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.8633463
+      objectReference: {fileID: 0}
+    - target: {fileID: 4053516555693797187, guid: 3e34306626d9d9047be41e7844abdd8b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.009744726
+      objectReference: {fileID: 0}
+    - target: {fileID: 4053516555693797187, guid: 3e34306626d9d9047be41e7844abdd8b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4053516555693797187, guid: 3e34306626d9d9047be41e7844abdd8b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4053516555693797187, guid: 3e34306626d9d9047be41e7844abdd8b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4053516555693797187, guid: 3e34306626d9d9047be41e7844abdd8b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4053516555693797187, guid: 3e34306626d9d9047be41e7844abdd8b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4053516555693797187, guid: 3e34306626d9d9047be41e7844abdd8b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4053516555693797187, guid: 3e34306626d9d9047be41e7844abdd8b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8608341148552967698, guid: 3e34306626d9d9047be41e7844abdd8b, type: 3}
+      propertyPath: m_Name
+      value: Monster-Cabbage (3)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3e34306626d9d9047be41e7844abdd8b, type: 3}
+--- !u!4 &2315461600373398785 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4053516555693797187, guid: 3e34306626d9d9047be41e7844abdd8b, type: 3}
+  m_PrefabInstance: {fileID: 1757204138012930626}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3503442899756489270
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6377135333117076897}
+    m_Modifications:
+    - target: {fileID: 4053516555693797187, guid: 3e34306626d9d9047be41e7844abdd8b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.4611607
+      objectReference: {fileID: 0}
+    - target: {fileID: 4053516555693797187, guid: 3e34306626d9d9047be41e7844abdd8b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.5831106
+      objectReference: {fileID: 0}
+    - target: {fileID: 4053516555693797187, guid: 3e34306626d9d9047be41e7844abdd8b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.009744726
+      objectReference: {fileID: 0}
+    - target: {fileID: 4053516555693797187, guid: 3e34306626d9d9047be41e7844abdd8b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4053516555693797187, guid: 3e34306626d9d9047be41e7844abdd8b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4053516555693797187, guid: 3e34306626d9d9047be41e7844abdd8b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4053516555693797187, guid: 3e34306626d9d9047be41e7844abdd8b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4053516555693797187, guid: 3e34306626d9d9047be41e7844abdd8b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4053516555693797187, guid: 3e34306626d9d9047be41e7844abdd8b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4053516555693797187, guid: 3e34306626d9d9047be41e7844abdd8b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8608341148552967698, guid: 3e34306626d9d9047be41e7844abdd8b, type: 3}
+      propertyPath: m_Name
+      value: Monster-Cabbage
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3e34306626d9d9047be41e7844abdd8b, type: 3}
+--- !u!4 &639019759401350517 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4053516555693797187, guid: 3e34306626d9d9047be41e7844abdd8b, type: 3}
+  m_PrefabInstance: {fileID: 3503442899756489270}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3662601926990969004
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6377135333117076897}
+    m_Modifications:
+    - target: {fileID: 4053516555693797187, guid: 3e34306626d9d9047be41e7844abdd8b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.071567
+      objectReference: {fileID: 0}
+    - target: {fileID: 4053516555693797187, guid: 3e34306626d9d9047be41e7844abdd8b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.7333462
+      objectReference: {fileID: 0}
+    - target: {fileID: 4053516555693797187, guid: 3e34306626d9d9047be41e7844abdd8b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.009744726
+      objectReference: {fileID: 0}
+    - target: {fileID: 4053516555693797187, guid: 3e34306626d9d9047be41e7844abdd8b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4053516555693797187, guid: 3e34306626d9d9047be41e7844abdd8b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4053516555693797187, guid: 3e34306626d9d9047be41e7844abdd8b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4053516555693797187, guid: 3e34306626d9d9047be41e7844abdd8b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4053516555693797187, guid: 3e34306626d9d9047be41e7844abdd8b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4053516555693797187, guid: 3e34306626d9d9047be41e7844abdd8b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4053516555693797187, guid: 3e34306626d9d9047be41e7844abdd8b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8608341148552967698, guid: 3e34306626d9d9047be41e7844abdd8b, type: 3}
+      propertyPath: m_Name
+      value: Monster-Cabbage (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3e34306626d9d9047be41e7844abdd8b, type: 3}
+--- !u!4 &762470462864103407 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4053516555693797187, guid: 3e34306626d9d9047be41e7844abdd8b, type: 3}
+  m_PrefabInstance: {fileID: 3662601926990969004}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4965696478409704239
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6377135333117076897}
+    m_Modifications:
+    - target: {fileID: 4053516555693797187, guid: 3e34306626d9d9047be41e7844abdd8b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.9715672
+      objectReference: {fileID: 0}
+    - target: {fileID: 4053516555693797187, guid: 3e34306626d9d9047be41e7844abdd8b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.43334627
+      objectReference: {fileID: 0}
+    - target: {fileID: 4053516555693797187, guid: 3e34306626d9d9047be41e7844abdd8b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.009744726
+      objectReference: {fileID: 0}
+    - target: {fileID: 4053516555693797187, guid: 3e34306626d9d9047be41e7844abdd8b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4053516555693797187, guid: 3e34306626d9d9047be41e7844abdd8b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4053516555693797187, guid: 3e34306626d9d9047be41e7844abdd8b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4053516555693797187, guid: 3e34306626d9d9047be41e7844abdd8b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4053516555693797187, guid: 3e34306626d9d9047be41e7844abdd8b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4053516555693797187, guid: 3e34306626d9d9047be41e7844abdd8b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4053516555693797187, guid: 3e34306626d9d9047be41e7844abdd8b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8608341148552967698, guid: 3e34306626d9d9047be41e7844abdd8b, type: 3}
+      propertyPath: m_Name
+      value: Monster-Cabbage (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3e34306626d9d9047be41e7844abdd8b, type: 3}
+--- !u!4 &8982791711433419884 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4053516555693797187, guid: 3e34306626d9d9047be41e7844abdd8b, type: 3}
+  m_PrefabInstance: {fileID: 4965696478409704239}
+  m_PrefabAsset: {fileID: 0}
