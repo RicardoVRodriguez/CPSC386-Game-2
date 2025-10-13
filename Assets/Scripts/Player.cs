@@ -14,13 +14,18 @@ public class Player : MonoBehaviour
     public AudioClip hitSound;
     public AudioClip pickupSound;
     public AudioSource audioSource;
-    
+    public Animator animator;
+    public SpriteRenderer spriteRenderer;
+    public bool walking = false;
+    public bool flip = false;
+   
+
 
     // player stats
     public bool spawnContinuously = true;
 
     public float speed = 0.0f;
-    public float timeBetweenAttacks = 5.0f;
+    public float timeBetweenAttacks = 3.0f;
     public float moveVertical = 0.0f;
     public float moveHorizontal = 0.0f;
 
@@ -74,6 +79,26 @@ public class Player : MonoBehaviour
         speed = 5.0f + ((float)gameManager.StatsUpgradeArr[5].m_Level / 2);
         moveHorizontal = Input.GetAxis("Horizontal");
         moveVertical = Input.GetAxis("Vertical");
+
+        if (moveHorizontal == 0.0f && moveVertical == 0.0f)
+        {
+            walking = false;
+            animator.SetBool("isWalking", walking);
+        }
+        else if (moveHorizontal != 0.0f || moveVertical != 0.0f)
+        {
+            walking = true;
+            animator.SetBool("isWalking", walking);
+        }
+
+        if (moveHorizontal > 0.0f)
+        {  
+            spriteRenderer.flipX = false;
+        }
+        else if (moveHorizontal < 0.0f)
+        {
+            spriteRenderer.flipX = true;
+        }
         rb2d.linearVelocity = new Vector2(moveHorizontal * speed, moveVertical * speed);
     }
 
@@ -206,7 +231,7 @@ public class Player : MonoBehaviour
     {
         while (spawnContinuously)
         {
-            timeBetweenAttacks = 4.5f - ((float)gameManager.StatsUpgradeArr[6].m_Level/2);
+            timeBetweenAttacks = 3.5f - ((float)gameManager.StatsUpgradeArr[6].m_Level/2);
             projectileSpeed = 200 + (gameManager.StatsUpgradeArr[7].m_Level * 100);
 
              yield return new WaitForSeconds(timeBetweenAttacks);
