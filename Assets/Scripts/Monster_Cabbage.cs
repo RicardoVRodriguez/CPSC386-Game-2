@@ -5,15 +5,17 @@ public class Monster_Cabbage : MonoBehaviour
     public GameObject pickupCabbage;
     public GameObject pickupExp;
     private Transform player;
-    private Game_Manager gameManager;
+    public Game_Manager gameManager;
     public AudioClip deathSound;
+    private int expChance = 5;
+    private int pickupChance = 9;
     public int MoveSpeed = 2;
     int MaxDist = 10;
     int MinDist = 0;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        gameManager = GameObject.FindWithTag("Game-Manager").GetComponent<Game_Manager>();
+        //gameManager = GameObject.FindWithTag("Game-Manager").GetComponent<Game_Manager>();
         player = GameObject.FindWithTag("Player").transform;
     }
 
@@ -48,8 +50,16 @@ public class Monster_Cabbage : MonoBehaviour
             float offset = 0.75f;
             Vector3 pos = new(transform.position.x + offset, transform.position.y + offset, transform.position.z);
 
-            Instantiate(pickupExp, pos, Quaternion.identity);
-            Instantiate(pickupCabbage, transform.position, Quaternion.identity);
+            int randomNum = Random.Range(1, 11);
+
+            if (randomNum >= expChance)
+            {
+                Instantiate(pickupExp, pos, Quaternion.identity);
+            }
+            if (randomNum >= pickupChance - gameManager.StatsUpgradeArr[3].m_Level)
+            {
+                Instantiate(pickupCabbage, transform.position, Quaternion.identity);
+            }
             Destroy(other.gameObject);
             Destroy(gameObject);
 

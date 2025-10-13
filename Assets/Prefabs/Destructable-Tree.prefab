@@ -194,9 +194,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07d49d5b2b8d2514f8b92e817f903e09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timer: 250
-  currentTime: 250
+  timer: 300
+  currentTime: 300
   spriteRenderer: {fileID: 6523142597694417043}
   tree: {fileID: -1841029739670112148, guid: f60cad7adeff150489b3db44a3063d59, type: 3}
   stump: {fileID: 8367313081285712220, guid: 8c53903b707c8e34eb837c3e5c0654d7, type: 3}
-  PickupLogs: {fileID: 193285583340020128, guid: cd116c089bf8b0544985b416ae6d0180, type: 3}
+  pickupLogs: {fileID: 193285583340020128, guid: cd116c089bf8b0544985b416ae6d0180, type: 3}
+  gameManager: {fileID: 0}

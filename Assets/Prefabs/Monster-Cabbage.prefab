@@ -105,7 +105,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pickupCabbage: {fileID: 663244916352221138, guid: 497c4c51dfcf27d478f5b9c39f4f8899, type: 3}
   pickupExp: {fileID: 6554371863450123349, guid: 0aca6d74efe6690479cda991b3c19cc6, type: 3}
-  audioSource: {fileID: 0}
+  gameManager: {fileID: 1167679530558230943, guid: 448e94f77fb012541b3aed5f2cc81780, type: 3}
   deathSound: {fileID: 8300000, guid: be20dfb3b5daf204692c4c8d5710aa7c, type: 3}
   MoveSpeed: 3
 --- !u!61 &8353692498459532565

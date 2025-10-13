@@ -105,6 +105,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pickupMeat: {fileID: 5741978126147961955, guid: 5d2744e1042db8b48ac8cd281e8206f1, type: 3}
   pickupExp: {fileID: 6554371863450123349, guid: 0aca6d74efe6690479cda991b3c19cc6, type: 3}
+  gameManager: {fileID: 1167679530558230943, guid: 448e94f77fb012541b3aed5f2cc81780, type: 3}
   deathSound: {fileID: 8300000, guid: be20dfb3b5daf204692c4c8d5710aa7c, type: 3}
   MoveSpeed: 4
 --- !u!61 &2021044196396108312

@@ -151,6 +151,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pickupMushroom: {fileID: 9054970203810693239, guid: ba1a1798fdf783540b0f714d0f6f3d30, type: 3}
   pickupExp: {fileID: 6554371863450123349, guid: 0aca6d74efe6690479cda991b3c19cc6, type: 3}
+  gameManager: {fileID: 1167679530558230943, guid: 448e94f77fb012541b3aed5f2cc81780, type: 3}
   deathSound: {fileID: 8300000, guid: be20dfb3b5daf204692c4c8d5710aa7c, type: 3}
   MoveSpeed: 2
 --- !u!61 &3339362246269144952

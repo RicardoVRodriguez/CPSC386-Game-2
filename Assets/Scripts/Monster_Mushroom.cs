@@ -6,9 +6,11 @@ public class Monster_Mushroom : MonoBehaviour
     public GameObject pickupMushroom;
     public GameObject pickupExp;
     private Transform player;
-   
+    public Game_Manager gameManager;
     public AudioClip deathSound;
     public int MoveSpeed = 1;
+    private int expChance = 5;
+    private int pickupChance = 9;
     int MaxDist = 10;
     int MinDist = 0;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -44,10 +46,17 @@ public class Monster_Mushroom : MonoBehaviour
             float offset = 0.75f;
             Vector3 pos = new(transform.position.x + offset, transform.position.y + offset, transform.position.z);
 
-            Instantiate(pickupExp, pos, Quaternion.identity);
+            int randomNum = Random.Range(1, 11);
 
-            Instantiate(pickupMushroom, transform.position, Quaternion.identity);
-            
+            if (randomNum >= expChance)
+            {
+                Instantiate(pickupExp, pos, Quaternion.identity);
+            }
+
+            if (randomNum >= pickupChance - gameManager.StatsUpgradeArr[1].m_Level)
+            {
+                Instantiate(pickupMushroom, transform.position, Quaternion.identity);
+            }
             
             Destroy(gameObject);
             Destroy(other.gameObject);

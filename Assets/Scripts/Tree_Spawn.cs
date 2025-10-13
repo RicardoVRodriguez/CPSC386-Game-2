@@ -2,12 +2,13 @@ using UnityEngine;
 
 public class Tree_Spawn : MonoBehaviour
 {
-    public int timer = 250;
-    public int currentTime = 250;
+    public int timer = 300;
+    public int currentTime = 300;
     public SpriteRenderer spriteRenderer;
     public Sprite tree;
     public Sprite stump;
     public GameObject pickupLogs;
+    public Game_Manager gameManager;
     private bool isStump = false;
     
 
@@ -30,6 +31,7 @@ public class Tree_Spawn : MonoBehaviour
         }
         else if (isStump && currentTime <= 0)
         {
+            timer = 300 - (25 * gameManager.StatsUpgradeArr[0].m_Level);
             currentTime = timer;
             spriteRenderer.sprite = tree;
             isStump = false;

@@ -1,6 +1,8 @@
+using System.Globalization;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Audio;
+using UnityEngine.SocialPlatforms.Impl;
 using UnityEngine.UI;
 
 public class Game_Manager : MonoBehaviour
@@ -28,33 +30,6 @@ public class Game_Manager : MonoBehaviour
 
     }
 
-    public class Recipe
-    {
-        public string m_Title;
-        public string m_Description;
-        public int m_Level;
-        public int m_MaxLevel;
-        public int m_MeatNeeded;
-        public int m_MushroomsNeeded;
-        public int m_CabbageNeeded;
-
-        public Recipe(string title, string description, int level, int maxLevel, int meatNeeded, int mushroomsNeeded, int cabbageNeeded)
-        {
-            m_Title = title;
-            m_Description = description;
-            m_Level = level;
-            m_MaxLevel = maxLevel;
-            m_MeatNeeded = meatNeeded;
-            m_MushroomsNeeded = mushroomsNeeded;
-            m_CabbageNeeded = cabbageNeeded;
-        }
-
-        public void IncLevel()
-        {
-            m_Level++;
-        }
-
-    }
     public enum GameState
     {
         Menu,
@@ -62,6 +37,7 @@ public class Game_Manager : MonoBehaviour
         Paused,
         GameOver
     }
+
     public GameState currentGameState;
     public AudioSource audioSource; 
     public AudioClip gameOverAudio;
@@ -73,6 +49,8 @@ public class Game_Manager : MonoBehaviour
     public GameObject pauseScreen;
     public bool isUpgrading = false;
     float elapsedTime;
+    private const string ScoreKey = "PlayerScore";
+    
 
     public Button leftButton;
     public Button rightButton;
@@ -96,21 +74,17 @@ public class Game_Manager : MonoBehaviour
 
 
 
-    ExpUpgrade[] StatsUpgradeArr = 
+    public ExpUpgrade[] StatsUpgradeArr = 
     { 
-        new ExpUpgrade("Increase Tree Growth", "Trees will grow back quicker.", 1, 5), 
-        new ExpUpgrade("Increase Mushroom Drops", "Monsters are more likely to drop mushrooms.", 1, 5), 
-        new ExpUpgrade("Increase Meat Drops", "Monsters are more likely to drop Meat.", 1, 5),
-        new ExpUpgrade("Increase Cabbage Drops", "Monsters are more likely to drop cabbage.", 1, 5),
-        new ExpUpgrade("Increase Max Health", "Your max health will increase but your current health will stay the same.", 1, 5),
-        new ExpUpgrade("Increase Movement Speed", "You will move faster.",1,5),
-        new ExpUpgrade("Increase Main Attack Damage", "You will move faster.",1,5)
+        new ExpUpgrade("Increase Tree Growth", "Trees will grow back quicker.", 1, 5), //0
+        new ExpUpgrade("Increase Mushroom Drops", "Monsters are more likely to drop mushrooms.", 1, 5), //1
+        new ExpUpgrade("Increase Meat Drops", "Monsters are more likely to drop Meat.", 1, 5), //2
+        new ExpUpgrade("Increase Cabbage Drops", "Monsters are more likely to drop cabbage.", 1, 5), //3
+        new ExpUpgrade("Increase Max Health", "Your max health will increase.", 1, 5), //4
+        new ExpUpgrade("Increase Movement Speed", "You will move faster.", 1, 5), //5
+        new ExpUpgrade("Increase Main Attack speed", "You will attack faster.", 1, 5), // 6
+        new ExpUpgrade("Increase Projectile speed", "Projectiles move faster.", 1, 5) // 7
 
-    };
-
-    Recipe[] recipesArr = 
-    { 
-        
     };
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -150,7 +124,12 @@ public class Game_Manager : MonoBehaviour
                 playedAudio = true;
                 audioSource.PlayOneShot(gameOverAudio, .7f);
             }
-            
+            if(elapsedTime > PlayerPrefs.GetFloat(ScoreKey, 0))
+            {
+                PlayerPrefs.SetFloat(ScoreKey, elapsedTime);
+                PlayerPrefs.Save();
+            }
+          
             loseScreen.SetActive(true);
         }
 
@@ -203,12 +182,21 @@ public class Game_Manager : MonoBehaviour
         if (StatsUpgradeArr[leftRandNumber].m_Level < StatsUpgradeArr[leftRandNumber].m_MaxLevel)
         {
             StatsUpgradeArr[leftRandNumber].IncLevel();
+            
+        }
+        else
+        {
+            TMP_Text button =  leftButton.GetComponentInChildren<TMP_Text>();
+            button.text = "MAX";
         }
 
         player.currentExp = 0;
         player.nextLevelExp += 100;
+        player.health = player.maxHealth;
         player.ChangeSlider();
     }
+        
+           
 
     public void RightButtonSelect()
     {
@@ -216,14 +204,22 @@ public class Game_Manager : MonoBehaviour
         currentGameState = GameState.Playing;
         statsUpgradeScreen.SetActive(false);
         isUpgrading = false;
-
+        
         if (StatsUpgradeArr[rightRandNumber].m_Level < StatsUpgradeArr[rightRandNumber].m_MaxLevel)
         {
             StatsUpgradeArr[rightRandNumber].IncLevel();
+            
+            
+        }
+        else
+        {
+            TMP_Text button = leftButton.GetComponentInChildren<TMP_Text>();
+            button.text = "MAX";
         }
 
         player.currentExp = 0;
         player.nextLevelExp += 100;
+        player.health = player.maxHealth;
         player.ChangeSlider();
     }
 
@@ -233,14 +229,23 @@ public class Game_Manager : MonoBehaviour
         currentGameState = GameState.Playing;
         statsUpgradeScreen.SetActive(false);
         isUpgrading = false;
+        
 
         if (StatsUpgradeArr[centerRandNumber].m_Level < StatsUpgradeArr[centerRandNumber].m_MaxLevel)
         {
             StatsUpgradeArr[centerRandNumber].IncLevel();
+
+            
+        }
+        else
+        {
+            TMP_Text button = leftButton.GetComponentInChildren<TMP_Text>();
+            button.text = "MAX";
         }
 
         player.currentExp = 0;
         player.nextLevelExp += 100;
+        player.health = player.maxHealth;
         player.ChangeSlider();
     }
 
