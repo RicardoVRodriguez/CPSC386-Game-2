@@ -416,11 +416,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Use WASD for movement.\n\nYour character witll auto-attack.\n\nUse your
+  m_text: "Use WASD for movement.\n\nYour character will auto-attack.\n\nUse your
     mouse to click on upgrades.\n\nUse E to drop items into the pot. These items
     can upgrade your main weapon.\n\nPress ESC during the game to pause, go back
     to the main menu, adjust a setting, or quit. \n\nTry to survive as long as possible
-    and beat your highscore with each playthrough.\n\n"
+    and beat your high score with each playthrough.\n\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

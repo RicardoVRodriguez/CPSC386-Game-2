@@ -16,7 +16,7 @@ public class Scene_Manager : MonoBehaviour
             TMP_Text bestTimeText = GameObject.Find("BestTimeText").GetComponent<TMP_Text>();
             int minutes = Mathf.FloorToInt(loadedScore / 60);
             int seconds = Mathf.FloorToInt(loadedScore % 60);
-            bestTimeText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+            bestTimeText.text = string.Format("Best Time: {0:00}:{1:00}", minutes, seconds);
         }
     }
 

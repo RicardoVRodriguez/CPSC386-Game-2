@@ -76,13 +76,13 @@ public class Game_Manager : MonoBehaviour
 
     public ExpUpgrade[] StatsUpgradeArr = 
     { 
-        new ExpUpgrade("Increase Tree Growth", "Trees will grow back quicker.", 1, 5), //0
+        new ExpUpgrade("Increase Tree Growth", "Trees will grow back quicker.", 1, 2), //0
         new ExpUpgrade("Increase Mushroom Drops", "Monsters are more likely to drop mushrooms.", 1, 5), //1
         new ExpUpgrade("Increase Meat Drops", "Monsters are more likely to drop Meat.", 1, 5), //2
         new ExpUpgrade("Increase Cabbage Drops", "Monsters are more likely to drop cabbage.", 1, 5), //3
         new ExpUpgrade("Increase Max Health", "Your max health will increase.", 1, 5), //4
         new ExpUpgrade("Increase Movement Speed", "You will move faster.", 1, 5), //5
-        new ExpUpgrade("Increase Main Attack speed", "You will attack faster.", 1, 5), // 6
+        new ExpUpgrade("Increase Main Attack speed", "You will attack faster.", 1, 2), // 6
         new ExpUpgrade("Increase Projectile speed", "Projectiles move faster.", 1, 5) // 7
 
     };
@@ -167,9 +167,61 @@ public class Game_Manager : MonoBehaviour
                 rightDesc.text = StatsUpgradeArr[rightRandNumber].m_Description;
                 centerDesc.text = StatsUpgradeArr[centerRandNumber].m_Description;
 
+                
+                
+               
+
+                if (StatsUpgradeArr[leftRandNumber].m_Level >= StatsUpgradeArr[leftRandNumber].m_MaxLevel)
+                {
+                    leftButton.GetComponentInChildren<TMP_Text>().text = "Max";
+                    leftButton.interactable = false;
+                }
+                else
+                {
+
+                    leftButton.GetComponentInChildren<TMP_Text>().text = "Upgrade";
+                    leftButton.interactable = true;
+                }
+
+                if (StatsUpgradeArr[centerRandNumber].m_Level >= StatsUpgradeArr[centerRandNumber].m_MaxLevel)
+                {
+
+                    centerButton.GetComponentInChildren<TMP_Text>().text = "Max";
+                    centerButton.interactable = false;
+                }
+                else
+                {
+                    centerButton.GetComponentInChildren<TMP_Text>().text = "Upgrade";
+                    centerButton.interactable = true;
+                }
+
+                if (StatsUpgradeArr[rightRandNumber].m_Level >= StatsUpgradeArr[rightRandNumber].m_MaxLevel)
+                {
+                    rightButton.GetComponentInChildren<TMP_Text>().text = "Max";
+                    rightButton.interactable = false;
+                }
+                else
+                {
+                    rightButton.GetComponentInChildren<TMP_Text>().text = "Upgrade";
+                    rightButton.interactable = true;
+                }
+
 
             }
         }
+    }
+
+    public void NoUpgradeButtonSelect()
+    {
+        Time.timeScale = 1f;
+        currentGameState = GameState.Playing;
+        statsUpgradeScreen.SetActive(false);
+        isUpgrading = false;
+
+        player.currentExp = 0;
+        player.nextLevelExp += 100;
+        player.health = player.maxHealth;
+        player.ChangeSlider();
     }
 
     public void LeftButtonSelect()
@@ -178,16 +230,11 @@ public class Game_Manager : MonoBehaviour
         currentGameState = GameState.Playing;
         statsUpgradeScreen.SetActive(false);
         isUpgrading = false;
-        
+
         if (StatsUpgradeArr[leftRandNumber].m_Level < StatsUpgradeArr[leftRandNumber].m_MaxLevel)
         {
             StatsUpgradeArr[leftRandNumber].IncLevel();
             
-        }
-        else
-        {
-            TMP_Text button =  leftButton.GetComponentInChildren<TMP_Text>();
-            button.text = "MAX";
         }
 
         player.currentExp = 0;
@@ -204,18 +251,15 @@ public class Game_Manager : MonoBehaviour
         currentGameState = GameState.Playing;
         statsUpgradeScreen.SetActive(false);
         isUpgrading = false;
-        
+
         if (StatsUpgradeArr[rightRandNumber].m_Level < StatsUpgradeArr[rightRandNumber].m_MaxLevel)
         {
             StatsUpgradeArr[rightRandNumber].IncLevel();
             
             
         }
-        else
-        {
-            TMP_Text button = leftButton.GetComponentInChildren<TMP_Text>();
-            button.text = "MAX";
-        }
+
+     
 
         player.currentExp = 0;
         player.nextLevelExp += 100;
@@ -231,17 +275,15 @@ public class Game_Manager : MonoBehaviour
         isUpgrading = false;
         
 
+       
+
         if (StatsUpgradeArr[centerRandNumber].m_Level < StatsUpgradeArr[centerRandNumber].m_MaxLevel)
         {
-            StatsUpgradeArr[centerRandNumber].IncLevel();
-
             
+            StatsUpgradeArr[centerRandNumber].IncLevel();
+    
         }
-        else
-        {
-            TMP_Text button = leftButton.GetComponentInChildren<TMP_Text>();
-            button.text = "MAX";
-        }
+
 
         player.currentExp = 0;
         player.nextLevelExp += 100;
