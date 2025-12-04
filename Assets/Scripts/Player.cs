@@ -2,6 +2,8 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
 using TMPro;
+// Handles and tracks the exp bar UI, movement, and the intervals between shooting projectiles.
+// This script also tracks item pickups, important stats like health, triggers for taking damage, and experience level.
 
 public class Player : MonoBehaviour
 {
@@ -13,6 +15,7 @@ public class Player : MonoBehaviour
     public Game_Manager gameManager;
     public AudioClip hitSound;
     public AudioClip pickupSound;
+    public AudioClip potSound;
     public AudioSource audioSource;
     public Animator animator;
     public SpriteRenderer spriteRenderer;
@@ -108,6 +111,7 @@ public class Player : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
+                audioSource.PlayOneShot(potSound, 0.7F);
                 potText.text = "You placed items into the pot";
                 cookedMeatCount += pickupMeatCount;
                 pickupMeatCount = 0;
@@ -201,6 +205,7 @@ public class Player : MonoBehaviour
             audioSource.PlayOneShot(hitSound, 0.7F);
             health -= 2;
             Destroy(other.gameObject);
+            StartCoroutine(HurtAnimation());
         }
 
         if (other.gameObject.CompareTag("Monster-Meat"))
@@ -208,6 +213,7 @@ public class Player : MonoBehaviour
             audioSource.PlayOneShot(hitSound, 0.7F);
             health--;
             Destroy(other.gameObject);
+            StartCoroutine(HurtAnimation());
         }
 
         if (other.gameObject.CompareTag("Monster-Cabbage"))
@@ -215,6 +221,14 @@ public class Player : MonoBehaviour
             audioSource.PlayOneShot(hitSound, 0.7F);
             health--;
             Destroy(other.gameObject);
+            StartCoroutine(HurtAnimation());
+        }
+
+        if (other.gameObject.CompareTag("Boss"))
+        {
+            audioSource.PlayOneShot(hitSound, 0.7F);
+            health -= 3;
+            StartCoroutine(HurtAnimation());
         }
     }
 
@@ -227,6 +241,12 @@ public class Player : MonoBehaviour
         
     }
 
+    IEnumerator HurtAnimation()
+    {
+        animator.SetBool("tookDamage", true);
+        yield return new WaitForSeconds(0.5f);
+        animator.SetBool("tookDamage", false);
+    }
     IEnumerator SpawnProjectiles()
     {
         while (spawnContinuously)

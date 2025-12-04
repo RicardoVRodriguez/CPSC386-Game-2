@@ -1,5 +1,5 @@
 using UnityEngine;
-
+// This is currently not in use and was for spawning logs. 
 public class Destructable_Tree : MonoBehaviour
 {
     public GameObject pickupWood;

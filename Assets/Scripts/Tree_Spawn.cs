@@ -1,4 +1,6 @@
+using Unity.VisualScripting;
 using UnityEngine;
+// This script handles instantiating a log pickup upon attack and features a timer for the tree's regrowth. 
 
 public class Tree_Spawn : MonoBehaviour
 {
@@ -9,6 +11,7 @@ public class Tree_Spawn : MonoBehaviour
     public Sprite stump;
     public GameObject pickupLogs;
     public Game_Manager gameManager;
+    public AudioClip deathSound;
     private bool isStump = false;
     
 
@@ -48,7 +51,7 @@ public class Tree_Spawn : MonoBehaviour
 
             float offset = 0.75f;
             Vector3 pos = new(transform.position.x + offset, transform.position.y + offset, transform.position.z);
-
+            AudioSource.PlayClipAtPoint(deathSound, transform.position);
             Instantiate(pickupLogs, pos, Quaternion.identity);
             Destroy(other.gameObject);
         }

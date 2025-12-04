@@ -1,5 +1,7 @@
 using UnityEngine;
 using System.Collections;
+// This script continuously spawns enemy prefabs from an array at a given interval that slowly shortens
+// as the game goes on until the time cap is hit to prevent too many enemies from spawning at one time.
 
 public class SpawnEnemies : MonoBehaviour
 {
@@ -9,6 +11,7 @@ public class SpawnEnemies : MonoBehaviour
     public int spawnCounter = 0;
     public GameObject[] monsters;
     public Transform[] transforms;
+    public bool isBossSpawner;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -28,24 +31,30 @@ public class SpawnEnemies : MonoBehaviour
 
             if(gameManager.currentGameState == Game_Manager.GameState.Playing)
             {
+                yield return new WaitForSeconds(waitForNextMonster);
                 int i = Random.Range(0, monsters.Length);
                 int j = Random.Range(0, transforms.Length);
                 Instantiate(monsters[i], transforms[j].transform.position, Quaternion.identity);
-                spawnCounter++;
 
-                if(spawnCounter >= 60)
+                if(!isBossSpawner)
                 {
-                    waitForNextMonster = 2.0f;
+
+                    spawnCounter++;
+                    if (spawnCounter >= 60)
+                    {
+                        waitForNextMonster = 2.0f;
+                    }
+                    else if (spawnCounter >= 40)
+                    {
+                        waitForNextMonster = 3.0f;
+                    }
+                    else if (spawnCounter >= 20)
+                    {
+                        waitForNextMonster = 3.5f;
+                    }
                 }
-                else if (spawnCounter >= 40)
-                {
-                    waitForNextMonster = 3.0f;
-                }
-                else if(spawnCounter >= 20)
-                {
-                    waitForNextMonster = 3.5f;
-                }
-                    yield return new WaitForSeconds(waitForNextMonster);
+                
+                   
             }
                 
            

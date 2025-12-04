@@ -1,6 +1,10 @@
 using System.Globalization;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
+//This script tracks the UI slider element for the volume by handling the player’s music volume setting
+//in the pause menu by saving a float value into playerprefs and loading it whenever a new game is started.
+
 public class Sound_Manager : MonoBehaviour
 {
     public AudioSource audioSource;

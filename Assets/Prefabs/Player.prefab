@@ -147,6 +147,7 @@ MonoBehaviour:
   gameManager: {fileID: 0}
   hitSound: {fileID: 8300000, guid: be20dfb3b5daf204692c4c8d5710aa7c, type: 3}
   pickupSound: {fileID: 8300000, guid: ac69bccfffe3172469c2da7b7ed05006, type: 3}
+  potSound: {fileID: 8300000, guid: 29282373abcb52247bdb61e1e617f0ac, type: 3}
   audioSource: {fileID: 784071907996082320}
   animator: {fileID: 6261386070134955}
   spriteRenderer: {fileID: 1783449769306534167}
@@ -168,19 +169,19 @@ MonoBehaviour:
   bottomProjectileSpawnPoint: {fileID: 6036490929043069412}
   pickupMushroomCount: 0
   cookedMushroomCount: 0
-  mushroomsNeeded: 10
+  mushroomsNeeded: 5
   mushroomLevel: 1
   pickupMeatCount: 0
   cookedMeatCount: 0
-  meatNeeded: 10
+  meatNeeded: 5
   meatLevel: 1
   pickupCabbageCount: 0
   cookedCabbageCount: 0
-  cabbageNeeded: 10
+  cabbageNeeded: 5
   cabbageLevel: 1
   pickupLogsCount: 0
   placedLogsCount: 0
-  logsNeeded: 10
+  logsNeeded: 5
   logsLevel: 1
 --- !u!50 &5178220194342073905
 Rigidbody2D:

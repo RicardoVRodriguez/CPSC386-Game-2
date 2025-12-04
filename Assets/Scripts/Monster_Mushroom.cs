@@ -1,5 +1,5 @@
 using UnityEngine;
-
+// This script is for handeling enemy logic for following the player, handle item drops, play a sound upon death, and damage the player. 
 public class Monster_Mushroom : MonoBehaviour
 {
 
@@ -58,8 +58,6 @@ public class Monster_Mushroom : MonoBehaviour
                 Instantiate(pickupMushroom, transform.position, Quaternion.identity);
             }
             
-            Destroy(gameObject);
-            Destroy(other.gameObject);
 
         }
 

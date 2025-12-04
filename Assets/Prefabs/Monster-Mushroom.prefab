@@ -149,8 +149,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 908296d8babf4fc41bcbd5e70caab11e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickupMushroom: {fileID: 9054970203810693239, guid: ba1a1798fdf783540b0f714d0f6f3d30, type: 3}
-  pickupExp: {fileID: 6554371863450123349, guid: 0aca6d74efe6690479cda991b3c19cc6, type: 3}
+  pickupMushroom: {fileID: 3023081586596232159, guid: e9e2fe451f7a7a044b788d52d4d6ad73, type: 3}
+  pickupExp: {fileID: 832509612134304336, guid: 273122cd69c388747a4d6803c8242903, type: 3}
   gameManager: {fileID: 1167679530558230943, guid: 448e94f77fb012541b3aed5f2cc81780, type: 3}
   deathSound: {fileID: 8300000, guid: be20dfb3b5daf204692c4c8d5710aa7c, type: 3}
   MoveSpeed: 2
@@ -184,7 +184,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0

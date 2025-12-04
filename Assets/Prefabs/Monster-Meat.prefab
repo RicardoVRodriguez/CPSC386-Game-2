@@ -103,8 +103,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d2d176aafb6dfd4abddabd19409c0c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickupMeat: {fileID: 5741978126147961955, guid: 5d2744e1042db8b48ac8cd281e8206f1, type: 3}
-  pickupExp: {fileID: 6554371863450123349, guid: 0aca6d74efe6690479cda991b3c19cc6, type: 3}
+  pickupMeat: {fileID: 584198726476381389, guid: 468a8c08875582942b6b8d6c0a070a29, type: 3}
+  pickupExp: {fileID: 832509612134304336, guid: 273122cd69c388747a4d6803c8242903, type: 3}
   gameManager: {fileID: 1167679530558230943, guid: 448e94f77fb012541b3aed5f2cc81780, type: 3}
   deathSound: {fileID: 8300000, guid: be20dfb3b5daf204692c4c8d5710aa7c, type: 3}
   MoveSpeed: 4

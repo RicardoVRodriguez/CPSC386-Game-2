@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.SocialPlatforms.Impl;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+//Manages the timer and tracks the game's current state. Handles any UI elements that need to be displayed when you lose, pause, and earn an upgrade. 
 
 public class Game_Manager : MonoBehaviour
 {
@@ -49,8 +51,9 @@ public class Game_Manager : MonoBehaviour
     public GameObject pauseScreen;
     public bool isUpgrading = false;
     float elapsedTime;
-    private const string ScoreKey = "PlayerScore";
-    
+    private const string Level1ScoreKey = "PlayerLv1Score";
+    private const string Level2ScoreKey = "PlayerLv2Score";
+
 
     public Button leftButton;
     public Button rightButton;
@@ -124,13 +127,28 @@ public class Game_Manager : MonoBehaviour
                 playedAudio = true;
                 audioSource.PlayOneShot(gameOverAudio, .7f);
             }
-            if(elapsedTime > PlayerPrefs.GetFloat(ScoreKey, 0))
+
+            Scene currentScene = SceneManager.GetActiveScene();
+            if(currentScene.name == "Game-Lv1")
             {
-                PlayerPrefs.SetFloat(ScoreKey, elapsedTime);
-                PlayerPrefs.Save();
+                if (elapsedTime > PlayerPrefs.GetFloat(Level1ScoreKey, 0))
+                {
+                    PlayerPrefs.SetFloat(Level1ScoreKey, elapsedTime);
+                    PlayerPrefs.Save();
+                }
             }
-          
-            loseScreen.SetActive(true);
+            else if (currentScene.name == "Game-Lv2")
+            {
+
+                if (elapsedTime > PlayerPrefs.GetFloat(Level2ScoreKey, 0))
+                {
+                    PlayerPrefs.SetFloat(Level2ScoreKey, elapsedTime);
+                    PlayerPrefs.Save();
+                }
+            }
+
+
+                loseScreen.SetActive(true);
         }
 
         if (currentGameState == GameState.Playing)

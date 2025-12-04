@@ -149,9 +149,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  lifetime: 5
+  lifetime: 3
   poison: {fileID: 6559027317412182994, guid: fe258e63d82d51c47b8e4d3de75348fb, type: 3}
+  poisonGroup: {fileID: 395986253406256600, guid: 4aa1e0f63e246ed4d8d6220b335f2217, type: 3}
   grass: {fileID: 339118968006827172, guid: 6229716b1f316574e8ee2e148da832b8, type: 3}
+  grassGroup: {fileID: 4327727723139772778, guid: 78884b165ffbcba448bffc9a34a7bd8a, type: 3}
 --- !u!50 &4847097460663574710
 Rigidbody2D:
   serializedVersion: 5

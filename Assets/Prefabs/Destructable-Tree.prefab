@@ -199,5 +199,6 @@ MonoBehaviour:
   spriteRenderer: {fileID: 6523142597694417043}
   tree: {fileID: -1841029739670112148, guid: f60cad7adeff150489b3db44a3063d59, type: 3}
   stump: {fileID: 8367313081285712220, guid: 8c53903b707c8e34eb837c3e5c0654d7, type: 3}
-  pickupLogs: {fileID: 193285583340020128, guid: cd116c089bf8b0544985b416ae6d0180, type: 3}
+  pickupLogs: {fileID: 5043216623124953256, guid: eec43c75c8f08834cb044891e1ba2a22, type: 3}
   gameManager: {fileID: 0}
+  deathSound: {fileID: 8300000, guid: be20dfb3b5daf204692c4c8d5710aa7c, type: 3}

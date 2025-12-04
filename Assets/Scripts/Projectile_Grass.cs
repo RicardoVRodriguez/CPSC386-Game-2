@@ -1,5 +1,5 @@
 using UnityEngine;
-
+//Upon triggering with the enemy, they are destroyed along with the enemy they impact.
 public class Projectile_Grass : MonoBehaviour
 {
     public float lifetime = 1.5f;

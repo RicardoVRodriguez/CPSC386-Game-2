@@ -17,6 +17,7 @@ TagManager:
   - Pickup-Exp
   - Game-Manager
   - Projectile-Grass
+  - Boss
   layers:
   - Default
   - TransparentFX

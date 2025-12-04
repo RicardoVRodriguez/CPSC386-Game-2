@@ -1,4 +1,6 @@
 using UnityEngine;
+// This script is for handeling enemy logic for following the player, handle item drops, play a sound upon death, and damage the player. 
+
 
 public class Monster_Cabbage : MonoBehaviour
 {
@@ -12,6 +14,7 @@ public class Monster_Cabbage : MonoBehaviour
     public int MoveSpeed = 2;
     int MaxDist = 10;
     int MinDist = 0;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -60,8 +63,7 @@ public class Monster_Cabbage : MonoBehaviour
             {
                 Instantiate(pickupCabbage, transform.position, Quaternion.identity);
             }
-            Destroy(other.gameObject);
-            Destroy(gameObject);
+
 
         }
 
